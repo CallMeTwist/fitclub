@@ -23,7 +23,7 @@ const Plans = () => {
 
             <div className="features">
               {plan.features.map((feature, i) => (
-                <div className="features">
+                <div className="features" key={i}>
                   <img src={whiteTick} alt="" />
                   <span key={i}>{feature}</span>
                 </div>
@@ -31,7 +31,7 @@ const Plans = () => {
             </div>
 
             <div>
-              <span>See more benefits -> </span>
+              <span>See more benefits</span>
             </div>
             <button className="btn">Join now</button>
           </div>
